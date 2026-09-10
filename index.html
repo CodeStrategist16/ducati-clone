@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ducati — The art of performance. An educational motorcycle showcase featuring design, engineering, Ducati Corse and test-ride interaction.">
+    <meta name="theme-color" content="#0b0b0b">
+    <title>DUCATI. — The Art of Performance</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS — retained for the HTML/CSS project requirement -->
+    <style>
+        .hero .hero-kicker { color: var(--red); }
+        .hero .hero-title em,
+        .section-heading h2 em,
+        .statement em,
+        .racing-copy h2 em,
+        .booking-intro h2 em,
+        .choice-copy h2 em { color: var(--red); }
+        .required::after { content: " *"; color: var(--red); }
+    </style>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar container" aria-label="Primary navigation">
+            <a class="brand" href="#home" aria-label="Ducati home">DUCATI<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-controls="navLinks" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" data-section="home">Home</a></li>
+                <li><a href="#bikes" data-section="bikes">Bikes</a></li>
+                <li><a href="#specs" data-section="specs">Specs</a></li>
+                <li><a href="#booking" data-section="booking">Test Ride</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- 01 — HERO -->
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-grid container">
+                <div class="hero-copy reveal">
+                    <p class="hero-kicker eyebrow">Bologna / Italy</p>
+
+                    <h1 class="hero-title" id="hero-title">
+                        Performance,<br>
+                        <em>made art.</em>
+                    </h1>
+
+                    <div class="hero-body">
+                        <p>Where Italian design meets racing DNA.</p>
+                        <p>Where engineering becomes instinct.</p>
+                        <p>Where every twist of the throttle becomes an emotion.</p>
+                    </div>
+
+                    <p class="hero-statement">
+                        <strong>This isn’t simply a motorcycle.</strong><br>
+                        <strong>It’s a Ducati.</strong>
+                    </p>
+
+                    <a class="button button-light" href="#bikes">
+                        Explore the collection <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+
+                <div class="hero-image-wrap reveal reveal-delay">
+                    <div class="hero-image-frame">
+                        <img src="Panigale V4.jpg" alt="Ducati Panigale V4 motorcycle" width="736" height="1308" fetchpriority="high">
+                        <div class="hero-image-overlay"></div>
+                        <div class="hero-bike-label">
+                            <span>01</span>
+                            <strong>Panigale V4</strong>
+                            <small>Born on the track. Built for the road.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-scroll container" aria-hidden="true">
+                <span>Scroll to discover</span>
+                <span class="scroll-line"></span>
+                <span>01 — 05</span>
+            </div>
+        </section>
+
+        <!-- PHILOSOPHY -->
+        <section class="philosophy section" id="philosophy" aria-labelledby="philosophy-title">
+            <div class="container">
+                <div class="section-index">01</div>
+                <div class="philosophy-grid reveal">
+                    <div>
+                        <p class="eyebrow">The Ducati Philosophy</p>
+                        <h2 class="display-heading" id="philosophy-title">Designed to<br><em>move you.</em></h2>
+                    </div>
+
+                    <div class="editorial-copy">
+                        <p class="lead">A Ducati is never just a machine.</p>
+                        <p>It is the tension between <strong>beauty and brutality</strong>. The balance between <strong>precision and instinct</strong>. The moment engineering stops being numbers — and starts becoming <strong>emotion</strong>.</p>
+                        <p>Every line is deliberate.<br>Every curve serves a purpose.<br>Every component exists to make the ride feel unforgettable.</p>
+                        <p class="statement">This is performance you can see.<br>Performance you can hear.<br>Performance you can <em>feel.</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COLLECTION -->
+        <section class="collection section" id="bikes" aria-labelledby="collection-title">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="eyebrow">The Collection</p>
+                        <h2 id="collection-title">Three machines.<br><em>One unmistakable soul.</em></h2>
+                    </div>
+                    <p>Choose your expression of Ducati. Whether you chase apexes, own the streets or disappear beyond the horizon — there is a Ducati built around your idea of freedom.</p>
+                </div>
+
+                <div class="bike-grid">
+                    <article class="bike-card reveal">
+                        <div class="bike-photo">
+                            <img src="Panigale V4.jpg" alt="Ducati Panigale V4" width="736" height="1308" loading="lazy">
+                            <span>01</span>
+                        </div>
+                        <div class="bike-card-body">
+                            <p class="bike-category">01 / SUPERBIKE</p>
+                            <h3>Panigale V4</h3>
+                            <p>Born from Ducati racing technology and shaped by aerodynamic obsession, the Panigale V4 turns every straight into an invitation and every corner into a challenge.</p>
+                            <button class="select-bike text-button" type="button" data-bike="Panigale V4">Select <span aria-hidden="true">↗</span></button>
+                        </div>
+                    </article>
+
+                    <article class="bike-card reveal reveal-delay">
+                        <div class="bike-photo">
+                            <img src="Monster.jpg" alt="Ducati Monster" width="720" height="1280" loading="lazy">
+                            <span>02</span>
+                        </div>
+                        <div class="bike-card-body">
+                            <p class="bike-category">02 / NAKED</p>
+                            <h3>Monster</h3>
+                            <p>Minimal by design. Unmistakable by nature. The Monster strips the motorcycle down to its essentials — leaving you with the engine, the chassis and nothing between you and the road.</p>
+                            <button class="select-bike text-button" type="button" data-bike="Monster">Select <span aria-hidden="true">↗</span></button>
+                        </div>
+                    </article>
+
+                    <article class="bike-card reveal reveal-delay-2">
+                        <div class="bike-photo">
+                            <img src="Multistrada V4.jpg" alt="Ducati Multistrada V4" width="735" height="985" loading="lazy">
+                            <span>03</span>
+                        </div>
+                        <div class="bike-card-body">
+                            <p class="bike-category">03 / ADVENTURE</p>
+                            <h3>Multistrada V4</h3>
+                            <p>Long roads. Unknown places. No unnecessary limits. The Multistrada V4 brings Ducati performance to every kind of journey — from city streets to roads that have no name.</p>
+                            <button class="select-bike text-button" type="button" data-bike="Multistrada V4">Select <span aria-hidden="true">↗</span></button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESIGN -->
+        <section class="design-section section" id="design" aria-labelledby="design-title">
+            <div class="container split-panel reveal">
+                <div class="dark-panel">
+                    <p class="eyebrow">02 — Design</p>
+                    <h2 class="display-heading" id="design-title">Form follows<br><em>feeling.</em></h2>
+                </div>
+                <div class="light-panel">
+                    <p>A Ducati should be recognizable before you see the badge.</p>
+                    <ul class="design-list">
+                        <li>Clean lines.</li>
+                        <li>Sculpted surfaces.</li>
+                        <li>Aggressive proportions.</li>
+                        <li>Italian character in every detail.</li>
+                    </ul>
+                    <p class="closing-line">Nothing is added simply for decoration.<br><strong>Nothing is designed without purpose.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENGINEERING -->
+        <section class="engineering section" id="engineering" aria-labelledby="engineering-title">
+            <div class="container">
+                <div class="section-heading compact reveal">
+                    <div>
+                        <p class="eyebrow">03 — Engineering</p>
+                        <h2 id="engineering-title">Precision,<br><em>at full speed.</em></h2>
+                    </div>
+                    <p>Behind every Ducati is an obsession with making motion feel effortless.</p>
+                </div>
+
+                <ol class="engineering-list reveal">
+                    <li><span>01</span><div><h3>Italian craftsmanship</h3><p>Hand-finished details shaped by decades of mechanical artistry.</p></div></li>
+                    <li><span>02</span><div><h3>Racing DNA</h3><p>Technology developed where milliseconds matter.</p></div></li>
+                    <li><span>03</span><div><h3>Aerodynamic intelligence</h3><p>Every surface shaped around stability, speed and control.</p></div></li>
+                    <li><span>04</span><div><h3>Performance engineering</h3><p>Machines engineered not merely to move — but to respond.</p></div></li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- TECHNICAL ARCHIVE -->
+        <section class="specs section" id="specs" aria-labelledby="specs-title">
+            <div class="container">
+                <div class="section-heading compact reveal">
+                    <div>
+                        <p class="eyebrow">Technical Archive</p>
+                        <h2 id="specs-title">Numbers tell the story.</h2>
+                    </div>
+                    <p><em>The ride tells the rest.</em></p>
+                </div>
+
+                <div class="table-wrap reveal">
+                    <table>
+                        <caption class="sr-only">Technical archive of selected Ducati motorcycles</caption>
+                        <thead>
+                            <tr><th scope="col">Model</th><th scope="col">Engine</th><th scope="col">Power</th><th scope="col">Weight</th><th scope="col">Category</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><th scope="row">Panigale V4</th><td>1103 cc</td><td>214 HP</td><td>195 kg</td><td>Superbike</td></tr>
+                            <tr><th scope="row">Monster</th><td>937 cc</td><td>111 HP</td><td>188 kg</td><td>Naked</td></tr>
+                            <tr><th scope="row">Multistrada V4</th><td>1158 cc</td><td>170 HP</td><td>240 kg</td><td>Adventure</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="specs-statement reveal">Three personalities.<br>Three purposes.<br><strong>One Ducati philosophy.</strong></p>
+            </div>
+        </section>
+
+        <!-- DUCATI CORSE -->
+        <section class="racing section" id="racing" aria-labelledby="racing-title">
+            <div class="container racing-grid">
+                <figure class="racing-image reveal">
+                    <img src="Racing.jpg" alt="Ducati racing motorcycle on a race track" width="980" height="1875" loading="lazy">
+                    <figcaption>DUCATI CORSE</figcaption>
+                </figure>
+
+                <div class="racing-copy reveal reveal-delay">
+                    <p class="eyebrow">04 — Ducati Corse</p>
+                    <span class="micro-label">RACING PROFILE</span>
+                    <h2 id="racing-title">Where limits become<br><em>starting points.</em></h2>
+                    <p>Racing doesn't simply test a Ducati.</p>
+                    <p><strong>It transforms one.</strong></p>
+                    <p>Every lap is data. Every corner is a lesson. Every fraction of a second is an opportunity to evolve.</p>
+                    <p>From the circuit to the street, Ducati Corse is where performance is questioned, challenged and pushed beyond what seemed possible.</p>
+
+                    <ol class="racing-list">
+                        <li><span>01</span><div><strong>Competition-bred engineering</strong><small>Built where there is nowhere to hide.</small></div></li>
+                        <li><span>02</span><div><strong>Relentless evolution</strong><small>Because yesterday's fastest machine is today's starting point.</small></div></li>
+                        <li><span>03</span><div><strong>Italian racing heritage</strong><small>Decades of speed, translated into every generation.</small></div></li>
+                        <li><span>04</span><div><strong>Performance without compromise</strong><small>No shortcuts. No excuses. No unnecessary limits.</small></div></li>
+                    </ol>
+
+                    <p class="corse-signature">This is Ducati Corse.</p>
+                    <a class="text-link" href="https://www.ducati.com/" target="_blank" rel="noopener noreferrer">Visit Ducati official website <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEST RIDE / 05 -->
+        <section class="booking section" id="booking" aria-labelledby="booking-title">
+            <div class="container booking-grid">
+                <div class="booking-intro reveal">
+                    <p class="eyebrow">05 — Experience the Machine</p>
+                    <h2 id="booking-title">Don't just imagine the ride.<br><em>Feel it.</em></h2>
+                    <p>You've seen the lines.<br>You've read the numbers.<br>You've heard the stories.</p>
+                    <p>Now it's your turn.</p>
+                    <p>Choose your Ducati and request a test ride.</p>
+                    <p class="booking-closer">Your next obsession could be one throttle away.</p>
+                </div>
+
+                <form class="booking-form reveal reveal-delay" id="testRideForm" novalidate>
+                    <div class="form-row">
+                        <label for="name" class="required">Full name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" autocomplete="name" minlength="2" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email" class="required">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" inputmode="email" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="bike" class="required">Choose your machine</label>
+                        <select id="bike" name="bike" required>
+                            <option value="" selected disabled>Select a Ducati</option>
+                            <option value="Panigale V4">Panigale V4</option>
+                            <option value="Monster">Monster</option>
+                            <option value="Multistrada V4">Multistrada V4</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="date" class="required">Preferred date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <label class="checkbox" for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span>I agree to the terms and conditions.</span>
+                    </label>
+
+                    <div class="form-actions">
+                        <button class="button button-red" type="submit">Request a test ride <span aria-hidden="true">↗</span></button>
+                        <button class="reset-button" type="reset">Reset</button>
+                    </div>
+
+                    <p class="form-message" id="formMessage" role="status" aria-live="polite" aria-atomic="true"></p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Dynamic choice -->
+        <section class="choice section" id="choice" aria-labelledby="choice-title">
+            <div class="container choice-inner reveal">
+                <p class="eyebrow">Your Ducati. Your choice.</p>
+                <h2 id="choice-title">Choose your <em>machine.</em></h2>
+                <p id="choiceMessage">Every Ducati has a personality.<br>Select one from the collection and discover the machine that matches yours.</p>
+                <button class="text-button" id="changeMotorcycle" type="button">Change motorcycle <span aria-hidden="true">↗</span></button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div>
+                <div class="footer-brand">DUCATI<span>.</span></div>
+                <p>The art of <em>performance.</em></p>
+            </div>
+            <nav aria-label="Footer navigation" class="footer-nav">
+                <a href="#home">Home</a>
+                <a href="#bikes">Bikes</a>
+                <a href="#specs">Specs</a>
+                <a href="#booking">Test Ride</a>
+            </nav>
+        </div>
+        <div class="container footer-bottom">
+            <small>Educational project · 2026</small>
+            <small>Bologna / Italy</small>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
